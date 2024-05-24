@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/840543485b.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <link href="https://fonts.cdnfonts.com/css/muli" rel="stylesheet" />
+
+    <link rel="stylesheet" href="style.css/header.css" />
+    <link rel="stylesheet" href="style.css/footer.css" />
+    <link rel="stylesheet" href="style.css/ending-web.css" />
+    <link rel="stylesheet" href="style.css/find.css" />
+    <!-- LINK biểu tượng web -->
+    <link rel="icon" href="image/Finance-removebg-preview.png" />
+
+    <title>An toàn & Bảo mật</title>
+    <style>
+      ul li a {
+        text-decoration: none;
+      }
+      body {
+        font-family: "Muli", sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      .aa_main {
+        border-radius: 5px;
+        margin: 50px auto;
+        width: 90%;
+        border: 1px solid gainsboro;
+      }
+      .aa_text {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        font-weight: bold;
+        padding-left: 10px;
+      }
+      .custom-button {
+        display: flex;
+        width: 100%;
+        text-align: left;
+        padding: 0;
+        background-color: white;
+        color: #00524e;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s, color 0.3s;
+      }
+      .custom-button.clicked {
+        background-color: #00524e;
+        color: white;
+      }
+      .info-container {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.5s ease;
+      }
+      .info-content {
+        color: #1c2e36;
+        font-size: 15px;
+        padding: 10px 51px 25px 51px;
+        background-color: #f0f0f0;
+      }
+      .icon-container {
+        width: 100%;
+        background-color: white;
+        color: #00524e;
+        padding: 18px 0 18px 25px;
+        font-size: 20px;
+        cursor: pointer;
+        transition: background-color 0.5s, color 0.5s;
+      }
+      .icon-container.active {
+        background-color: #00524e;
+        color: white;
+      }
+      .aa_img {
+        width: 100%;
+        height: 80vh;
+        object-fit: cover;
+        position: relative;
+      }
+      .aa_imgtext {
+        font-weight: bold;
+        font-size: 36px;
+        text-shadow: 0 0 17px rgba(0, 0, 0, 0.5);
+        color: white;
+        position: absolute;
+        top: 240px;
+        left: 70px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <div class="header-box">
+          <div class="c1">
+            <div class="left flex">
+              <a class="logo" href="source.html/home-page.html">
+                <img src="image/logo/logo.png" />
+              </a>
+              <ul class="left-side">
+                <li><a href="source.html/login.html">Cá nhân</a></li>
+                <li><a href="source.html/login.html">Doanh Nghiệp</a></li>
+                <li>
+                  <a href="source.html/login.html">Khách hàng cao cấp</a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <ul class="right-side">
+                <li>
+                  <a href="source.html/about-us.html">Về Victory Bank</a>
+                </li>
+                <li><a href="source.html/tuyendung.html">Tuyển dụng</a></li>
+                <li><a href="source.html/hoi&dap.html">Hỏi & Đáp</a></li>
+                <li><a href="source.html/lienhe.html">Liên hệ</a></li>
+                <li><a href="source.html/news.html">Tin tức</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="c2">
+            <ul class="left-under"></ul>
+            <ul class="right-under">
+              <li>
+                <a href="#"><i class="fa fa-search"></i></a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa fa-user-plus user-lock"> </i
+                  ><span>Đăng ký dịch vụ trực tuyến</span></a
+                >
+                <ul class="option submenu-1">
+                  <li><a href="source.html/login.html">Cá nhân</a></li>
+                  <li><a href="source.html/login.html">Doanh nghiệp</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa fa-lock user-lock"></i
+                  ><span>Ngân hàng trực tuyến</span></a
+                >
+                <ul class="option submenu-2">
+                  <li><a href="source.html/login.html">Cá nhân</a></li>
+                  <li><a href="source.html/login.html">Doanh nghiệp</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="vpn">
+          <div class="vpn-container">
+            <img src="image/logo/UK.webp" />
+            <span class="vpn_name">EN</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-collapse hidden">
+        <div class="left-menu">
+          <ul class="ul">
+            <li>
+              <a class="logo" href="#">
+                <img src="image/logo/logo.png" alt="Logo" />
+              </a>
+              <a href="source.html/login.html">Cá nhân</a>
+              <ion-icon name="chevron-down-outline"></ion-icon>
+              <ul class="submenu option ul">
+                <li><a href="source.html/login.html">Cá nhân</a></li>
+                <li><a href="source.html/login.html">Doanh nghiệp</a></li>
+              </ul>
+            </li>
+            <li><a href="source.html/news.html">Tin tức</a></li>
+          </ul>
+        </div>
+        <div class="right-menu">
+          <ul class="ul">
+            <li>
+              <a href="#"><i class="fa fa-search"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-user-plus user-lock"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-lock user-lock"></i></a>
+            </li>
+            <li>
+              <a href="#"><img src="image/logo/UK.webp" alt="English" /></a>
+            </li>
+            <li></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <div class="all-menu flex">
+      <div class="logo">
+        <img href="source.html/home-page.html" src="image/logo/logo.png" />
+      </div>
+      <ul class="all-menu-container flex">
+        <li class="login"><a href="source.html/login.html">Đăng nhập</a></li>
+        <li class="all-menu-box">
+          <a></a>
+          <a class="open-menu"
+            ><ion-icon name="reorder-four-outline"></ion-icon
+          ></a>
+          <a class="close-menu size"
+            ><ion-icon name="close-outline"></ion-icon
+          ></a>
+        </li>
+      </ul>
+      <ul class="submenu-collapse">
+        <li><a href="source.html/login.html">Cá nhân</a></li>
+        <li><a href="source.html/login.html">Doanh nghiệp</a></li>
+        <li>
+          <a href="#" class="all-menu-find">
+            <span class="find-box flex">
+              <span class="find-icon"
+                ><ion-icon name="search-outline"></ion-icon
+              ></span>
+              <span class="looking">Tìm kiếm</span>
+            </span>
+          </a>
+        </li>
+        <li><a href="source.html/about-us.html">Về Victory Bank</a></li>
+        <li><a href="source.html/tuyendung.html">Tuyển dụng</a></li>
+        <li><a href="source.html/hoi&dap.html">Hỏi & Đáp</a></li>
+        <li>
+          <a href="#" class="right-stick">
+            <span class="right-stick-item flex">
+              <span class="icon"
+                ><ion-icon name="call-outline"></ion-icon
+              ></span>
+              <span class="item-word">19009247</span>
+            </span>
+            <span class="right-stick-item flex">
+              <span class="icon"
+                ><ion-icon name="pencil-outline"></ion-icon
+              ></span>
+              <span class="item-word">Liên hệ</span>
+            </span>
+            <span class="right-stick-item flex">
+              <span class="icon"
+                ><ion-icon name="location-outline"></ion-icon
+              ></span>
+              <span class="item-word">Vị trí ATM/chi nhánh</span>
+            </span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <section id="find">
+      <div class="inner-container">
+        <a href="#" class="logo-search">
+          <img src="image/logo/logo-removebg.png" />
+        </a>
+        <a href="#" class="icon-close">
+          <ion-icon name="close-outline"></ion-icon>
+        </a>
+        <form class="search-field">
+          <button class="icon-search-bold">
+            <ion-icon name="search-outline"></ion-icon>
+          </button>
+          <input type="search" placeholder="Tìm kiếm ..." />
+        </form>
+
+        <div class="search-suggest flex">
+          <div class="result-suggestion">
+            <p>Kết quả gợi ý</p>
+          </div>
+          <div class="service-suggestion">
+            <p>Các sản phẩm/dịch vụ gợi ý</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div>
+      <img
+        class="aa_img"
+        src="https://stl.tech/wp-content/uploads/2021/10/Banner-Image_Network-Topology.jpg"
+        alt=""
+      />
+      <div class="aa_imgtext">An toàn & Bảo mật</div>
+      <div class="aa_main">
+        <button class="custom-button" onclick="toggleInfo(1)">
+          <div class="icon-container" onclick="toggleIcon(this)">
+            <i class="fa fa-plus-circle"
+              ><span class="aa_text"
+                >NHỮNG NGUYÊN TẮC BẢO MẬT CỦA VICTORY BANK</span
+              ></i
+            >
+            <i class="fa fa-minus-circle" style="display: none"
+              ><span class="aa_text"
+                >NHỮNG NGUYÊN TẮC BẢO MẬT CỦA VICTORY BANK</span
+              ></i
+            >
+          </div>
+        </button>
+        <div class="info-container" id="infoContainer1">
+          <div class="info-content">
+            Victory Bank luôn hiểu rằng khi truy cập và sử dụng website của
+            Victory Bank, Quý khách luôn quan tâm và cân nhắc vấn đề bảo mật
+            thông tin cá nhân khi truy cập vào Trang Web. Victory Bank sẽ thực
+            hiện việc bảo mật các thông tin cá nhân của Quý khách với sự tuân
+            thủ các quy định của pháp luật Việt Nam và nỗ lực cao nhất.
+            <br /><br />
+            Những thông tin Victory Bank yêu cầu Quý khách cung cấp chỉ để hiểu
+            rõ hơn nhu cầu cung cấp các sản phẩm, dịch vụ phù hợp với yêu cầu
+            của Quý khách và Victory Bank có quyền sử dụng thông tin mà Quý
+            khách cung cấp qua Trang Web để sử dụng cho hoạt động của Victory
+            Bank.<br /><br />
+            Victory Bank không tiết lộ thông tin của Quý khách cho bất kỳ cá
+            nhân, tổ chức nào trừ khi đã có thông báo và nhận được đồng ý của
+            Quý khách hoặc theo quy định của pháp luật.<br /><br />
+            Tại những trường hợp cụ thể, Victory Bank có thể phải cung cấp thông
+            tin của Quý khách cho cơ quan có thẩm quyền theo quy định của pháp
+            luật tuy nhiên, Victory Bank bảo đảm việc cung cấp đó được thực hiện
+            theo đúng quy định của pháp luật.<br /><br />
+            Việc truy cập thông tin của Quý khách thực hiện bởi Victory Bank,
+            nhân viên của Victory Bank và/hoặc cá nhân nào được phép đều phải
+            tuân thủ theo đúng quy định về bảo mật của Victory Bank.
+          </div>
+        </div>
+        <button class="custom-button" onclick="toggleInfo(2)">
+          <div class="icon-container" onclick="toggleIcon(this)">
+            <i class="fa fa-plus-circle"
+              ><span class="aa_text">PHƯƠNG THỨC BẢO MẬT</span></i
+            >
+            <i class="fa fa-minus-circle" style="display: none"
+              ><span class="aa_text">PHƯƠNG THỨC BẢO MẬT</span></i
+            >
+          </div>
+        </button>
+        <div class="info-container" id="infoContainer2">
+          <div class="info-content">
+            Victory Bank sẽ thực hiện tất cả các phương thức bảo vệ an toàn và
+            hợp lý nhất để bảo đảm thông tin cá nhân của Quý khách và luôn tuân
+            thủ các quy định của pháp luật Việt Nam liên quan đến việc lưu trữ
+            và sử dụng thông tin.
+          </div>
+        </div>
+        <button class="custom-button" onclick="toggleInfo(3)">
+          <div class="icon-container" onclick="toggleIcon(this)">
+            <i class="fa fa-plus-circle"
+              ><span class="aa_text">THU THẬP NHỮNG THÔNG TIN CÁ NHÂN</span></i
+            >
+            <i class="fa fa-minus-circle" style="display: none"
+              ><span class="aa_text">THU THẬP NHỮNG THÔNG TIN CÁ NHÂN</span></i
+            >
+          </div>
+        </button>
+        <div class="info-container" id="infoContainer3">
+          <div class="info-content">
+            Việc truy cập trang web này của Quý khách có thể được ghi nhận lại
+            cho mục đích phân tích dữ liệu truy cập trang web và mô hình sử dụng
+            phổ biến. Thông qua việc thu thập các thông tin cá nhân này, chúng
+            tôi mong muốn cung cấp dịch vụ tốt hơn và gần gũi hơn tới khách hàng
+            và hoạt động hiệu quả hơn. <br /><br />
+            Một số thông tin truy cập trang web của Quý khách sẽ được thu thập
+            thông qua việc sử dụng “cookies”. (Cookies là một tập tin dữ liệu
+            nhỏ tự động lưu số lần lướt web của một cá nhân trên máy tính của họ
+            và có thể dùng cookies để khôi phục lại truy cập.) Nếu Quý khách
+            muốn vô hiệu hóa những cookies này, Quý khách có thể thay đổi cài
+            đặt trên trình duyệt của mình. Tuy nhiên, có thể Quý khách sẽ không
+            thể truy cập một số phần của trang web chúng tôi.<br /><br />
+            Victory Bank có thể sử dụng thông tin từ việc truy cập trang Web này
+            của Khách hàng để giới thiệu thông báo và giới thiệu những sản phẩm,
+            dịch vụ và các tài liệu tiếp thị khác mà chúng tôi cho là phù hợp
+            với sở thích và nhu cầu của khách hàng. Chúng tôi cũng có thể mời
+            những người truy cập trang web này tham gia vào nghiên cứu và khảo
+            sát thị trường và các hoạt động tương tự khác.
+          </div>
+        </div>
+        <button class="custom-button" onclick="toggleInfo(4)">
+          <div class="icon-container" onclick="toggleIcon(this)">
+            <i class="fa fa-plus-circle"
+              ><span class="aa_text">TRUYỀN TẢI QUA INTERNET</span></i
+            >
+            <i class="fa fa-minus-circle" style="display: none"
+              ><span class="aa_text">TRUYỀN TẢI QUA INTERNET</span></i
+            >
+          </div>
+        </button>
+        <div class="info-container" id="infoContainer4">
+          <div class="info-content">
+            Do tính chất của Internet, các giao dịch có thể bị gián đoạn, mất
+            tín hiệu đường truyền, truyền dữ liệu chậm và truyền số liệu không
+            đúng. Ngân hàng không chịu trách nhiệm đối với các lỗi chức năng của
+            thiết bị liên lạc không theo sự kiểm soát của Ngân hàng gây ảnh
+            hưởng đến tính chính xác hoặc thời gian nhận và gửi các thư và giao
+            dịch mà Quý khách gửi.
+          </div>
+        </div>
+        <button class="custom-button" onclick="toggleInfo(5)">
+          <div class="icon-container" onclick="toggleIcon(this)">
+            <i class="fa fa-plus-circle"
+              ><span class="aa_text">CÁC TRANG WEB LIÊN KẾT</span></i
+            >
+            <i class="fa fa-minus-circle" style="display: none"
+              ><span class="aa_text">CÁC TRANG WEB LIÊN KẾT</span></i
+            >
+          </div>
+        </button>
+        <div class="info-container" id="infoContainer5">
+          <div class="info-content">
+            Victory Bank không chịu trách nhiệm về nội dung hoặc thiết kế của
+            bất kỳ trang web nào khác liên kết đến trang này. Khi Quý khách truy
+            cập và sử dụng những trang web khác liên kết đến trang này, Quý
+            khách sẽ phải tự chịu các rủi ro và tuân theo những điều khoản và
+            điều kiện sử dụng áp dụng cho sự truy cập/sử dụng đó.
+          </div>
+        </div>
+        <button class="custom-button" onclick="toggleInfo(6)">
+          <div class="icon-container" onclick="toggleIcon(this)">
+            <i class="fa fa-plus-circle"
+              ><span class="aa_text"
+                >HƯỚNG DẪN VỀ CÁC NGUYÊN TẮC BẢO MẬT</span
+              ></i
+            >
+            <i class="fa fa-minus-circle" style="display: none"
+              ><span class="aa_text"
+                >HƯỚNG DẪN VỀ CÁC NGUYÊN TẮC BẢO MẬT</span
+              ></i
+            >
+          </div>
+        </button>
+        <div class="info-container" id="infoContainer6">
+          <div class="info-content">
+            Để các giao dịch được thực hiện an toàn, tránh các gian lận giao
+            dịch trực tuyến, Quý khách và Victory Bank đều đóng vai trò quan
+            trọng trong việc bảo vệ các thông tin cá nhân của Quý khách. Quý
+            khách nên thận trọng trong việc sử dụng, bảo vệ các thông tin về tài
+            khoản bằng việc không chia sẻ, cung cấp hoặc tạo điều kiện cho người
+            khác sử truy cập, sử dụng Tên sử dụng/Tên đăng nhập và/hoặc Mật khẩu
+            của Quý khách.
+            <br /><br />
+            Victory Bank luôn cố gắng bảo vệ thông tin của Quý khách bằng những
+            nỗ lực cao nhất. Tuy nhiên, Victory Bank hiểu rằng Quý khách sẽ chịu
+            toàn bộ tổn thất tương đương với giá trị giao dịch không được ủy
+            quyền trong trường hợp những giao dịch không được ủy quyền thực hiện
+            bằng tài khoản của Quý khách mà không có sự sai sót hoặc vô ý từ
+            phía Quý khách.<br /><br />
+            Để bảo mật Tên sử dụng/Tên đăng nhập và/hoặc Mật khẩu, Quý khách nên
+            thận trọng và tuân thủ theo các nguyên tắc:<br /><br />
+            - Không tiết lộ Tên sử dụng/Tên đăng nhập và/hoặc Mật khẩu với bất
+            kỳ ai, viết hoặc sử dụng ở nơi mà mọi người có thể nhận biết và nhìn
+            thấy được.<br /><br />
+            - Khi chọn mật khẩu Quý khách không nên chọn những thông tin dễ xác
+            định như họ tên, ngày sinh, số điện thoại hoặc một số ký tự, con số
+            dễ nhận biết từ tên, ngày sinh, số điện thoại của Quý khách.<br /><br />
+            - Thoát khỏi hệ thống và trình duyệt khi rời khỏi máy tính.<br /><br />
+            - Khi nghi ngờ mật khẩu đã bị lộ, Quý khách thay đổi mật khẩu ngay
+            lập tức, trong trường hợp cần thiết Quý khách lập tức thông báo và
+            đề nghị được hỗ trợ từ Victory Bank qua số điện thoại 19009247.
+          </div>
+        </div>
+      </div>
+      <script>
+        let activeInfo = null;
+        function toggleInfo(infoIndex) {
+          const infoContainer = document.getElementById(
+            `infoContainer${infoIndex}`
+          );
+          const button = document.querySelector(
+            `.custom-button:nth-child(${infoIndex * 2 - 1})`
+          );
+
+          if (activeInfo === infoIndex) {
+            infoContainer.style.maxHeight = null;
+            activeInfo = null;
+            button.classList.remove("clicked");
+          } else {
+            if (activeInfo !== null) {
+              const prevInfoContainer = document.getElementById(
+                `infoContainer${activeInfo}`
+              );
+              const prevButton = document.querySelector(
+                `.custom-button:nth-child(${activeInfo * 2 - 1})`
+              );
+
+              prevInfoContainer.style.maxHeight = null;
+              prevButton.classList.remove("clicked");
+            }
+            infoContainer.style.maxHeight = infoContainer.scrollHeight + "px";
+            activeInfo = infoIndex;
+            button.classList.add("clicked");
+          }
+        }
+        let activeIcon = null;
+
+        function toggleIcon(iconContainer) {
+          if (activeIcon !== null && activeIcon !== iconContainer) {
+            resetIcon(activeIcon);
+          }
+
+          let isActive = iconContainer.classList.toggle("active");
+          activeIcon = isActive ? iconContainer : null;
+
+          const icons = iconContainer.querySelectorAll("i");
+          if (isActive) {
+            icons[0].style.display = "none";
+            icons[1].style.display = "inline-block";
+          } else {
+            icons[0].style.display = "inline-block";
+            icons[1].style.display = "none";
+          }
+        }
+
+        function resetIcon(iconContainer) {
+          iconContainer.classList.remove("active");
+          const icons = iconContainer.querySelectorAll("i");
+          icons[0].style.display = "inline-block";
+          icons[1].style.display = "none";
+        }
+      </script>
+    </div>
+    <footer>
+      <div class="c4">
+        <div>
+          <img
+            class="footer_img"
+            src="https://cdn.glitch.global/9ba07266-cc4b-4c47-9372-441a2ccbac9e/BankFooter.png?v=1690171712169"
+          />
+        </div>
+        <div class="footer_info">
+          &copy; 2018 Ngân hàng TMCP Đầu tư và Phát triển Việt Nam
+        </div>
+        <div class="flag">
+          <div class="c4_item1">
+            <img
+              class="vpn_footer"
+              src="https://cdn.freebiesupply.com/logos/thumbs/2x/united-kingdom-logo.png"
+            />
+          </div>
+          <span class="vpn_en">EN</span>
+        </div>
+        <div class="c4_item2">
+          <img
+            class="media_logo"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/1200px-Facebook_Logo_%282019%29.png"
+          />
+        </div>
+        <div class="c4_item2">
+          <img
+            class="media_logo"
+            src="https://cdn1.iconfinder.com/data/icons/logotypes/32/circle-linkedin-512.png"
+          />
+        </div>
+        <div class="c4_item2">
+          <img
+            class="media_logo"
+            src="https://freelogopng.com/images/all_img/1656501968youtube-icon-png.png"
+          />
+        </div>
+        <div class="c4_item2">
+          <img
+            class="media_logo"
+            src="https://classic.vn/wp-content/uploads/2022/07/zalo-icon.png"
+          />
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="page.js/menu.js"></script>
+  <script src="page.js/find.js"></script>
+</html>

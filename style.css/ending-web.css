@@ -1,0 +1,9 @@
+.ending-title {
+    background-color: #f7f9fb;
+    color: #a6a6a6;
+}
+
+.ending-title p {
+    font-size: 14px;
+    padding: 20px 0 20px 5%;
+}

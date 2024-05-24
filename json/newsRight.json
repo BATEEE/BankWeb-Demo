@@ -1,0 +1,20 @@
+[
+    {
+        "image": "item-04.jpg",
+        "date": "02-05-2023",
+        "title": "Tình hình hoạt động của chúng tôi trong quý 1 năm 2023",
+        "content": "Hiệu suất quý đầu tiên mạnh mẽ của chúng tôi cung cấp thêm bằng chứng cho thấy chiến lược của chúng tôi đang hoạt động."
+    },
+    {
+        "image": "item-06.jpg",
+        "date": "23-02-2023",
+        "title": "Chúng tôi đã đặt mục tiêu khí hậu cho nền kinh tế thực",
+        "content": "Chúng tôi đã công bố các mục tiêu phát thải được tài trợ thêm cho bốn lĩnh vực sử dụng nhiều carbon."
+    },
+    {
+        "image": "item-08.jpg",
+        "date": "14-12-2022",
+        "title": "Chính sách năng lượng của chúng tôi để hỗ trợ quá trình chuyển đổi ròng về 0",
+        "content": "Chính sách được cập nhật sẽ hỗ trợ quá trình chuyển đổi sang một tương lai bằng không vào năm 2050 hoặc sớm hơn."
+    }
+]

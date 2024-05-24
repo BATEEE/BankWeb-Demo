@@ -1,0 +1,491 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Muli", sans-serif;
+}
+
+body {
+  backdrop-filter: blur(5px);
+  background: url("/image/background.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.flex {
+  display: flex;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 80px;
+}
+
+.properties {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 80%;
+  background: url("/image/background.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 40px;
+}
+
+.form-box {
+  position: relative;
+  width: 400px;
+  height: 450px;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 40px;
+  border-left: 2px solid gray;
+  overflow: hidden;
+}
+
+form.sign-in {
+  opacity: 1;
+  transition: all 0.3s linear;
+}
+
+.sign-in.sign-in-click {
+  transform: translateX(120%);
+  opacity: 0;
+}
+
+.form-box h2 {
+  color: white;
+  text-align: center;
+  font-size: 2em;
+}
+
+.input-box {
+  position: relative;
+  margin: 30px 0;
+  width: 310px;
+  border-bottom: 2px solid white;
+}
+
+.input-box label {
+  position: absolute;
+  font-size: 1em;
+  left: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: white;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.input-box input {
+  width: 100%;
+  max-width: 260px;
+  height: 50px;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 1em;
+  padding: 0 50px 0 5px;
+  color: white;
+}
+
+.input-box input#pass {
+  max-width: 230px;
+}
+
+.input-box input::placeholder {
+  padding-right: 50px;
+}
+
+.input-box ion-icon {
+  position: absolute;
+  right: 5px;
+  font-size: 1.2rem;
+  top: 20px;
+  color: white;
+}
+
+ion-icon[name="eye-off-outline"],
+ion-icon[name="eye-outline"] {
+  margin-right: 30px;
+  cursor: pointer;
+}
+
+ion-icon[name="eye-outline"] {
+  display: none;
+}
+
+input:focus ~ label,
+input:valid ~ label {
+  top: -5px;
+}
+
+.forget {
+  margin: 15px 0 15px;
+  font-size: 0.9em;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+
+.forget a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.forget label input {
+  margin-right: 3px;
+}
+
+.forget a:hover {
+  text-decoration: underline;
+}
+
+button {
+  width: 100%;
+  height: 40px;
+  background: white;
+  border-radius: 40px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: 600;
+}
+
+.register {
+  font-size: 0.9em;
+  color: white;
+  text-align: center;
+  margin: 25px 0 10px;
+}
+
+.register p a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+}
+
+.register p a:hover {
+  text-decoration: underline;
+}
+
+.intro-box {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  color: white;
+  border-radius: 40px;
+}
+
+.items {
+  width: 100%;
+  height: 100%;
+  padding: 70px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.items .logo {
+  font-size: 1.3em;
+}
+
+.text-items h2 {
+  font-size: 2em;
+}
+
+.text-items p {
+  font-size: 1em;
+  margin: 20px 0;
+}
+
+.social-icons a ion-icon {
+  color: white;
+  font-size: 24px;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: transform 0.5s ease;
+}
+
+.social-icons a:hover ion-icon {
+  transform: scale(1.2);
+}
+
+form.sign-up {
+  position: absolute;
+  transform: translateX(120%);
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+
+.sign-up.sign-up-click {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+/* Menu */
+.menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu ul {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu ul a {
+  text-decoration: none;
+  font-weight: 600;
+  color: white;
+  position: relative;
+}
+
+.menu ul li a > img {
+  width: 150px;
+  object-fit: cover;
+}
+
+.menu ul li {
+  margin: 20px 40px;
+}
+
+.menu ul li:first-child {
+  margin-block: 0;
+}
+
+.menu ul li:not(:first-child) a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  border-radius: 5px;
+  transform: translateY(10px);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.menu ul li a:hover:after {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  color: white;
+  margin-right: 20px;
+}
+
+.search-bar input {
+  width: clamp(100px, 250px, 400px);
+  border: none;
+  padding: 5px 10px;
+}
+
+.search-bar ion-icon {
+  margin-left: 3px;
+  color: gray;
+}
+
+.search-bar input {
+  background: transparent;
+  border: 1px solid gray;
+  color: white;
+  outline: none;
+}
+
+.search-bar input:focus {
+  border: 1px solid rgb(177, 177, 177);
+}
+
+.header-collapse {
+  display: none;
+}
+
+/* MENU COLLAPSED */
+@media screen and (max-width: 1200px) {
+  header {
+    display: none;
+  }
+
+  .header-collapse {
+    display: block;
+    position: relative;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+  }
+
+  .header {
+    min-height: 8vh;
+    background-color: rgba(30, 30, 30, 0.24);
+  }
+
+  .header .nav-bar {
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    height: 100%;
+    max-width: 1200px;
+    padding: 0 10px;
+  }
+
+  .nav-list ul {
+    list-style: none;
+    position: absolute;
+    background-color: rgb(30, 30, 30);
+    width: 100%;
+    height: 100vh;
+    left: 100%;
+    top: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transition: left 0.5s ease;
+  }
+
+  .nav-list ul.active {
+    left: 0;
+  }
+
+  .nav-list ul a {
+    font-size: 1.8rem;
+    font-weight: 700;
+    letter-spacing: 0.2rem;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 20px;
+    display: block;
+  }
+
+  .nav-list ul a::after {
+    content: attr(data-after);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    color: rgba(240, 248, 255, 0.021);
+    font-size: 5rem;
+    letter-spacing: 25px;
+    white-space: nowrap;
+    z-index: -1;
+    transition: letter-spacing 0.3s ease;
+  }
+
+  .nav-list ul li:hover a::after {
+    transform: translate(-50%, -50%) scale(1);
+    letter-spacing: initial;
+  }
+
+  .nav-list ul li:hover a {
+    color: crimson;
+  }
+
+  .hamburger {
+    height: 60px;
+    width: 60px;
+    display: inline-block;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+    cursor: pointer;
+    transform: scale(0.8);
+    margin-right: 20px;
+    margin-top: 10px;
+  }
+
+  .hamburger::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    animation: hamburger-puls 1s ease infinite;
+  }
+
+  @keyframes hamburger-puls {
+    0% {
+      opacity: 1;
+      transform: scale(1);
+    }
+    100% {
+      opacity: 0;
+      transform: scale(1.4);
+    }
+  }
+
+  .hamburger .bar {
+    height: 2px;
+    width: 30px;
+    position: relative;
+    background-color: #fff;
+    z-index: -1;
+  }
+
+  .hamburger .bar::after,
+  .hamburger .bar::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    background-color: #fff;
+    transition: 0.3s ease;
+    transition-property: top, bottom;
+  }
+
+  .hamburger .bar::after {
+    top: 8px;
+  }
+
+  .hamburger .bar::before {
+    bottom: 8px;
+  }
+
+  .hamburger.active .bar::before {
+    bottom: 0;
+  }
+
+  .hamburger.active .bar::after {
+    top: 0;
+  }
+}
+
+@media screen and (max-width: 1020px) {
+    .intro-box {
+        display: none;
+    }
+
+    .properties {
+        justify-content: center;
+    }
+
+    .form-box {
+        border-left: 0;
+    }
+}

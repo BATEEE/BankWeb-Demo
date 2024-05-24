@@ -1,0 +1,68 @@
+footer
+{
+    background-color: teal;
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+.c4
+{
+    display: flex;
+    align-items: center;
+}
+.footer_img
+{
+    width: 200px;
+}
+.footer_info
+{
+    color: white;
+    padding: 20px;
+    font-size: 14px;
+    white-space: nowrap;
+}
+.c4_item1
+{
+    margin-left: 500px;
+    margin-right: 10px;
+    position: relative;
+}
+
+.flag {
+    display: flex;
+    align-items: center;
+}
+
+.flag .vpn_en::before {
+    content: "";
+    position: absolute;
+    right: -10px;
+    top: 0;
+    height: 100%;
+    width: 2px;
+    background-color: white;
+}
+
+.c4_item1:hover
+{
+    cursor: pointer;
+}
+.vpn_footer
+{
+    width: 40px;
+}
+.vpn_en
+{
+    position: relative;
+    color: white;
+    margin-right: 15px;
+}
+.media_logo
+{
+    width: 30px;
+    margin: 11px 5px;
+}
+.media_logo:hover
+{
+    cursor: pointer;
+}

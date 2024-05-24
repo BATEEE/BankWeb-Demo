@@ -1,0 +1,338 @@
+.flex {
+  display: flex;
+}
+.c3 {
+  display: flex;
+  margin-bottom: 50px;
+}
+.c3_item1 {
+  width: 50%;
+  background-color: white;
+}
+.c3_item2 {
+  width: 50%;
+  background-color: white;
+  padding-left: 120px;
+}
+.c3_child1 {
+  display: flex;
+}
+.c3_child1 a {
+  text-decoration: none;
+  color: #00524e;
+}
+section {
+  color: #00524e;
+  padding: 10px 20px;
+  font-weight: bold;
+}
+section:hover {
+  cursor: pointer;
+}
+.email_adress:hover {
+  cursor: pointer;
+  color: #00524e;
+}
+.c3_child2 {
+  display: flex;
+}
+.c3_child-title {
+  font-weight: bold;
+  color: #00524e;
+  padding: 10px 20px;
+}
+.c3_text {
+  padding-left: 20px;
+  padding-bottom: 10px;
+}
+.form_input {
+  margin: 0 0 10px 20px;
+  width: 250px;
+  padding: 10px;
+  border: 1px solid gainsboro;
+}
+.login_button {
+  width: 564px;
+  margin: 0 0 20px 20px;
+  text-align: center;
+  background-color: white;
+  border: 1px solid gainsboro;
+  padding: 10px;
+  transition: color 0.5s;
+  cursor: pointer;
+}
+.login_button:hover {
+  color: #00524e;
+}
+.c5 {
+  display: flex;
+  background-color: white;
+}
+.c5_main {
+  width: 694px;
+  display: flex;
+  margin-left: 20px;
+}
+.c5_item {
+  text-align: center;
+  flex: 1;
+  padding: 10px 50px;
+  border-bottom: 1px solid gainsboro;
+  cursor: pointer;
+}
+.c5_item:hover {
+  color: #00524e;
+  border-bottom: 1px solid #00524e;
+}
+.flg {
+  width: 25px;
+}
+#interface1 {
+  position: relative;
+  margin-left: 20px;
+}
+.unit {
+  margin-left: 10px;
+  position: absolute;
+}
+.tb_child {
+  padding: 10px 100px 10px 0;
+}
+.first {
+  padding-top: 9px;
+}
+.divide {
+  border-top: 1px solid gainsboro;
+}
+#interface2 {
+  margin-left: 20px;
+  display: none;
+}
+.ls {
+  border-bottom: 1px solid gainsboro;
+}
+.center {
+  text-align: center;
+  padding: 5px 0;
+}
+.center:first-child {
+  padding: 10px 177px;
+}
+.interface-btn {
+  width: 244px;
+  border-bottom: 1px solid gainsboro;
+  text-align: center;
+  flex: 1;
+  padding: 10px 50px;
+  color: black;
+  background-color: transparent;
+  cursor: pointer;
+}
+.interface-btn.active {
+  color: #00524e;
+}
+.animatedDiv {
+  margin-left: 90px;
+  width: 0;
+  height: 3px;
+  background-color: #00524e;
+  transition: width 0.3s ease-out;
+  cursor: pointer;
+}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap");
+.flex {
+  display: flex;
+}
+.select-menu {
+  width: 79px;
+}
+.select-menu .select-btn {
+  padding-left: 10px;
+  display: flex;
+  height: 45px;
+  background: #f7f9fb;
+  font-size: 20px;
+  align-items: center;
+  cursor: pointer;
+}
+.select-btn i {
+  font-size: 25px;
+  transition: 0.3s;
+}
+.select-menu.active .select-btn i {
+  transform: rotate(-180deg);
+}
+.select-menu .opts {
+  border: 1px solid gainsboro;
+  border-radius: 5px;
+  position: absolute;
+  padding: 0 5px;
+  background: #fff;
+  display: none !important;
+}
+.opt1,
+.opt2 {
+  position: absolute;
+  top: -3px;
+}
+.select-menu.active .opts {
+  display: block !important;
+}
+.opts .opt {
+  border-bottom: 1px solid gainsboro;
+  display: flex;
+  height: 40px;
+  cursor: pointer;
+  align-items: center;
+  background: #fff;
+}
+.opts .opt:hover {
+  background: #f2f2f2;
+}
+.opt img {
+  width: 25px;
+  margin-right: 10px;
+}
+.opt .opt-text {
+  font-size: 15px;
+}
+.converter {
+  height: 240px;
+  padding-right: 20px;
+  border-radius: 10px;
+  margin-top: 120px;
+  background-color: #f7f9fb;
+  margin-left: 15px;
+}
+.converter_title {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  padding: 10px 0;
+}
+.input_number > input {
+  width: 475px;
+  font-size: 20px;
+  border: 1px solid gainsboro;
+  padding: 10px;
+  margin: 0 0 10px 1px;
+}
+.output_number > input {
+  width: 475px;
+  font-size: 20px;
+  border: 1px solid gainsboro;
+  padding: 10px;
+  margin: 0 0 10px 1px;
+}
+.swap_button {
+  border-radius: 5px;
+  width: 475px;
+  background-color: #00524e;
+  color: white;
+  margin-left: 80px;
+  text-align: center;
+  border: 1px solid gainsboro;
+  padding: 10px;
+  cursor: pointer;
+  transition: color 0.5s;
+}
+.swap_button:hover {
+  color: #00524e;
+  background-color: white;
+  border: 1px solid #00524e;
+}
+.notice {
+  color: grey;
+  padding: 10px 0 0 80px;
+  font-style: italic;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#menuContainer1 {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+}
+#menuContainer2 {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+}
+.line {
+  width: 100%;
+  height: 1px;
+  margin: 40px 0 25px 0;
+  border-top: 1px solid gainsboro;
+}
+input {
+  border: none;
+  outline: none;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  display: none;
+}
+
+.modal {
+  font-size: 17px;
+  background-color: white;
+  border-radius: 5px;
+  padding: 35px 20px;
+  text-align: center;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  display: none;
+}
+.modal img {
+  margin: auto;
+  width: 40px;
+}
+.form-container {
+  text-align: center;
+}
+
+#registerBtn {
+  margin-top: 10px;
+}
+
+#successModal,
+#errorModal {
+  width: 250px;
+}
+#okSuccessBtn,
+#okErrorBtn {
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: white;
+  border: 1px solid gainsboro;
+  padding: 15px 50px;
+  margin-top: 10px;
+}
+#okSuccessBtn:hover {
+  color: white;
+  background-color: #00524e;
+  transition: background-color 0.5s;
+}
+#okErrorBtn:hover {
+  color: white;
+  background-color: #00524e;
+  transition: background-color 0.5s;
+}
+
+.flag-container {
+  position: relative;
+}
+
+.c3_child1 > div {
+  padding: 10px 20px;
+  font-weight: bold;
+}

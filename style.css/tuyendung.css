@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Muli", sans-serif;
+}
+#tuyendung {
+    padding: 0;
+}
+.aa_img {
+  width: 100%;
+  height: 80vh;
+  object-fit: cover;
+  position: relative;
+  margin-bottom: 30px;
+}
+.aa_imgtext {
+  font-weight: bold;
+  font-size: 36px;
+  text-shadow: 0 0 17px rgba(0, 0, 0, 0.5);
+  color: white;
+  position: absolute;
+  top: 240px;
+  left: 70px;
+}
+.aa_chev {
+  text-shadow: 0 0 17px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  color: white;
+  position: absolute;
+  top: 400px;
+  left: 70px;
+}
+.aa_chev i {
+  font-size: 24px;
+  margin-bottom: 10px;
+  position: relative;
+  top: 0;
+  transition: top 0.5s;
+}
+.aa_chev:hover i {
+  top: 10px;
+}
+.c3_item1 {
+  width: 50%;
+  background-color: white;
+}
+.c3_child1 {
+  display: flex;
+}
+.c3_child1 a {
+  text-decoration: none;
+  color: #00524e;
+}
+.c3_text {
+  padding-left: 20px;
+  padding-bottom: 10px;
+}
+section {
+  color: #00524e;
+  padding: 10px 20px;
+  font-weight: bold;
+}
+section:hover {
+  cursor: pointer;
+}
+.email_adress:hover {
+  cursor: pointer;
+  color: #00524e;
+}
+.rec_link {
+  margin: 15px auto 0 auto;
+  width: 80%;
+  display: flex;
+}
+.rec_con {
+  margin: 20px auto 0 auto;
+  width: 80%;
+  display: flex;
+}
+.rec_item {
+  background-size: cover;
+  border-radius: 5px;
+  text-align: center;
+  width: 400px;
+  padding: 95px 0px;
+  margin-right: 20px;
+  font-size: 24px;
+  font-weight: bold;
+}
+.rec_background1 {
+  background-image: url(https://businessupside.in/wp-content/uploads/2022/03/Business-management.jpg);
+}
+.rec_background2 {
+  background-image: url(https://tuyendung.bidv.com.vn/assets/images/upload/thumb-2.jpg);
+}
+.rec_background3 {
+  background-image: url(https://tuyendung.bidv.com.vn/assets/images/upload/thumb-3.jpg);
+}
+.rec_text {
+  width: 400px;
+  margin-right: 20px;
+  font-size: 14px;
+}
+.rec_text i {
+  margin-left: 10px;
+  position: relative;
+  left: 0;
+  transition: left 0.5s;
+  font-size: 12px;
+}
+.rec_item:hover {
+  cursor: pointer;
+  background-color: #00524e;
+  transition: background-color 0.5s;
+}
+.redetail:hover {
+  cursor: pointer;
+  color: #00524e;
+  transition: color 0.5s;
+}
+.redetail:hover i {
+  left: 5px;
+}
+.rec_text a {
+  text-decoration: none;
+  color: black;
+}
+.rec_text:hover a {
+  color: #00524e;
+}
+.line {
+  width: 100%;
+  height: 1px;
+  margin: 40px 0 25px 0;
+  border-top: 1px solid gainsboro;
+}
+ul li a {
+  text-decoration: none;
+}

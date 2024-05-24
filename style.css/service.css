@@ -1,0 +1,218 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Muli", sans-serif;
+}
+
+.utilities {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  background: transparent;
+  padding: 0;
+}
+
+.deposists-box,
+.digital-bank-box,
+.payment-transfer-box,
+.loans-box,
+.foreign-exchange-box {
+  position: relative;
+  padding: 28px 23px;
+  color: white;
+  height: 60vh;
+  overflow: hidden;
+  transition: all 0.3s;
+}
+
+.deposists-box .utilities-title,
+.digital-bank-box .utilities-title,
+.payment-transfer-box .utilities-title,
+.loans-box .utilities-title,
+.foreign-exchange-box .utilities-title {
+  font-weight: 700;
+  font-size: 24px;
+  margin-bottom: 30px;
+
+  transform: translate3d(20%, 100px, 0);
+
+  vertical-align: top;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.deposists-box .utilities-title {
+  transform: translate3d(25%, 100px, 0);
+}
+
+.digital-bank-box .utilities-title {
+  transform: translate3d(17%, 100px, 0);
+}
+
+.payment-transfer-box .utilities-title {
+  transform: translate3d(17%, 100px, 0);
+}
+
+.foreign-exchange-box .utilities-title {
+    transform: translate3d(17%, 100px, 0);
+}
+
+.deposists-box div,
+.digital-bank-box div,
+.payment-transfer-box div,
+.loans-box div,
+.foreign-exchange-box div {
+  margin-bottom: 10px;
+}
+
+.deposists-box .deposists-box-content > a,
+.digital-bank-box .digital-bank-box-content > a,
+.payment-transfer-box .payment-transfer-box-content > a,
+.loans-box .loans-box-content > a,
+.foreign-exchange-box .foreign-exchange-box-content > a {
+  text-decoration: none;
+  color: white;
+  line-height: 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.deposists-box-content,
+.digital-bank-box-content,
+.payment-transfer-box-content,
+.loans-box-content,
+.foreign-exchange-box-content {
+  transform: translateX(-110%);
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+.deposists-box a:hover,
+.digital-bank-box a:hover,
+.payment-transfer-box a:hover,
+.loans-box a:hover,
+.foreign-exchange-box a:hover {
+  text-decoration: underline;
+}
+
+.deposists-box:hover,
+.digital-bank-box:hover,
+.payment-transfer-box:hover,
+.loans-box:hover,
+.foreign-exchange-box:hover {
+  background: rgba(0, 84, 84, 0.6);
+}
+
+.deposists,
+.digital-bank,
+.payment-transfer,
+.loans,
+.foreign-exchange {
+  position: relative;
+}
+
+.deposists::before,
+.digital-bank::before,
+.payment-transfer::before,
+.loans::before,
+.foreign-exchange::before {
+  content: "";
+  position: absolute;
+  z-index: -1000;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+}
+
+.deposists::before {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/image/GOLD.jpg");
+}
+
+.digital-bank::before {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/image/image.jpg");
+}
+
+.payment-transfer::before {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/image/card.jpg");
+}
+
+.loans::before {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/image/vay.gif");
+}
+
+.foreign-exchange::before {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/image/lap.webp");
+}
+
+.deposists-box::after,
+.digital-bank-box::after,
+.payment-transfer-box::after,
+.loans-box::after,
+.foreign-exchange-box::after {
+  content: "";
+  position: absolute;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+  left: 0;
+  bottom: 35%;
+  height: 100px;
+  width: 100%;
+  top: auto;
+  transition: all .5s ease;
+}
+
+.deposists-box::after {
+  background-image: url('/image/box-icon/icon-1.svg');
+}
+
+.digital-bank-box::after {
+  background-image: url('/image/box-icon/icon-2.svg');
+}
+
+.payment-transfer-box::after {
+  background-image: url('/image/box-icon/icon-3.svg');
+}
+
+.loans-box::after {
+  background-image: url('/image/box-icon/icon-4.svg');
+}
+
+.foreign-exchange-box::after {
+  background-image: url('/image/box-icon/icon-5.svg');
+}
+
+.deposists-box:hover .utilities-title,
+.digital-bank-box:hover .utilities-title,
+.payment-transfer-box:hover .utilities-title,
+.loans-box:hover .utilities-title,
+.foreign-exchange-box:hover .utilities-title {
+  transform: translate3d(0, 0, 0);
+}
+
+.deposists-box:hover .deposists-box-content,
+.digital-bank-box:hover .digital-bank-box-content,
+.payment-transfer-box:hover .payment-transfer-box-content,
+.loans-box:hover .loans-box-content,
+.foreign-exchange-box:hover .foreign-exchange-box-content {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.deposists-box:hover:after,
+.digital-bank-box:hover::after,
+.payment-transfer-box:hover::after,
+.loans-box:hover::after,
+.foreign-exchange-box:hover::after {
+  bottom: 10px;
+}
